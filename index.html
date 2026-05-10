@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="app">
+
+    <div id="top-row">
+
+      <div id="left-panel">
+        <table id="main-table">
+          <thead>
+            <tr>
+              <th>
+                <select id="dropdown">
+                  <option value="">-- Select group --</option>
+                </select>
+              </th>
+              <th>Present</th>
+              <th>Leader</th>
+            </tr>
+          </thead>
+          <tbody id="name-rows">
+          </tbody>
+        </table>
+      </div>
+
+      <div id="right-panel">
+        <div id="mode-select">
+          <label>
+            <input type="radio" name="mode" value="size" checked>
+            People per group
+          </label>
+          <label>
+            <input type="radio" name="mode" value="count">
+            Number of groups
+          </label>
+        </div>
+
+        <input type="number" id="group-input" min="1" value="2">
+
+        <button id="generate-btn">Generate Groups</button>
+      </div>
+
+    </div>
+
+    <div id="groups-output">
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
