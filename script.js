@@ -118,7 +118,7 @@ const colors = [
     const memberItems = group.members.map(n => `<li>${n}</li>`).join('');
     return `
       <div class="group-box" style="border-color: ${color}">
-        <h3 style="color: ${color}">Group ${i + 1}</h3>
+        <h3 style="color: ${color}">Skupina ${i + 1}</h3>
         <ul>
           <li class="leader">👑 ${group.leader}</li>
           ${memberItems}
